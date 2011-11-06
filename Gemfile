@@ -44,6 +44,7 @@ gem 'simple_form'
 gem 'thin'
 gem 'unicorn'
 gem 'rainbows'
+gem 'kaminari'
 
 # Dopisujemy brakujące gemy (niedopatrzenie autorów Rails 3.1.1)
 gem 'sass'

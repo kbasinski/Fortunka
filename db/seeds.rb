@@ -6,9 +6,16 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Fortune.create :quotation => 'I hear and I forget. I see and I remember. I do and I understand.'
-Fortune.create :quotation => 'Everything has its beauty but not everyone sees it.'
-Fortune.create :quotation => 'It does not matter how slowly you go so long as you do not stop.'
-Fortune.create :quotation => 'Study the past if you would define the future.'
-Fortune.create :quotation => 'Kazdy kij ma dwa konce.', :source => 'Jan Maria Rokita'
-Fortune.create :quotation => 'Jesli cos ma sie zepsuc to na pewno sie zepsuje. Zwlaszcza Ruby on Rails.', :source => 'Murphy'
+# $ locate platitudes.u8
+#   /usr/share/games/fortunes/platitudes.u8
+
+platitudes = File.readlines('/usr/share/games/fortunes/platitudes.u8', "\n%\n")
+platitudes.map do |p|
+  reg = /\t?(.+)\n\t\t--\s*(.*)\n%\n/m
+  m = p.match(reg)
+  if m
+    Fortune.create :quotation => m[1], :source => m[2]
+  else
+    Fortune.create :quotation => p[0..-4], :source => Faker::Name.name
+  end
+end

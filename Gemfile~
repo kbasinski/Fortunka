@@ -34,3 +34,27 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+
+# Łatwiejsze w użyciu formularze
+gem 'simple_form'
+# albo
+# gem 'formtastic'
+
+# Alternatywne dla WEBricka serwery WWW
+gem 'thin'
+gem 'unicorn'
+gem 'rainbows'
+
+# Dopisujemy brakujące gemy (niedopatrzenie autorów Rails 3.1.1)
+gem 'sass'
+gem 'coffee-script'
+
+group :development do
+  # Ładniejsze wypisywanie rekordów na konsoli
+  # (zob. konfiguracja irb w ~/.irbrc)
+  gem 'wirble'
+  gem 'hirb'
+  # Bezproblemowe zapełnianie bazy danymi testowymi
+  gem 'faker'
+  gem 'populator'
+end

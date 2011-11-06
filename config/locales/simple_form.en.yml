@@ -21,4 +21,15 @@ en:
     # hints:
     #   username: 'User name to sign in.'
     #   password: 'No special characters, please.'
-
+    labels:
+      fortune:
+        source: 'source'
+        quotation: 'said'
+    hints:
+      fortune:
+        source: '(optional)'
+        quotation: '(maximum 128 characters)'
+    placeholders:
+      fortune:
+        source: 'source or blank'
+        quotation: 'no special chars, please'

@@ -5,3 +5,15 @@
  *= require_self
  *= require_tree . 
 */
+
+
+input[type="text"], textarea {
+  font: inherit;
+}
+
+div.input, input, textarea, label {
+  float: left;
+}
+div.input {
+  width: 100%;
+}

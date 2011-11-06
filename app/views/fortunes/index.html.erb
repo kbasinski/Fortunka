@@ -1,3 +1,6 @@
+
+		
+
 <h1>Listing fortunes</h1>
 
 <table>
@@ -19,7 +22,13 @@
   </tr>
 <% end %>
 </table>
-
+<br />
+<p><%= paginate @fortunes %></p>
 <br />
 
+<p>
 <%= link_to 'New Fortune', new_fortune_path %>
+</p>
+
+
+
