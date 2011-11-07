@@ -11,3 +11,8 @@ Komentarze
 Mały refactoring
 Paginacja
 Simple_forms
+
+
+Po git clone:
+rake db:migrate
+rake db:seeds (pobiera bazę fortunek z lokalnej aplikacji fortunes)
