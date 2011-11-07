@@ -1,0 +1,14 @@
+<p>
+    <b>Author:</b>
+    <%= shout.author %>
+</p>
+ 
+<p>
+    <b>Comment:</b>
+    <%= shout.body %> <br />
+    <%= link_to 'Delete', [shout.fortune, shout],
+               :confirm => 'Are you sure?',
+               :method => :delete %>
+</p>
+
+<hr />

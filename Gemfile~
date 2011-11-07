@@ -37,6 +37,7 @@ end
 
 # Łatwiejsze w użyciu formularze
 gem 'simple_form'
+gem 'act_as_commentable'
 # albo
 # gem 'formtastic'
 
@@ -44,6 +45,7 @@ gem 'simple_form'
 gem 'thin'
 gem 'unicorn'
 gem 'rainbows'
+gem 'kaminari'
 
 # Dopisujemy brakujące gemy (niedopatrzenie autorów Rails 3.1.1)
 gem 'sass'

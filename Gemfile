@@ -37,6 +37,7 @@ end
 
 # Łatwiejsze w użyciu formularze
 gem 'simple_form'
+gem 'acts_as_commentable'
 # albo
 # gem 'formtastic'
 

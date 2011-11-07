@@ -23,8 +23,8 @@ en:
     #   password: 'No special characters, please.'
     labels:
       fortune:
-        source: 'Author'
-        quotation: 'Quote'
+        source: 'source'
+        quotation: 'said'
     hints:
       fortune:
         source: '(optional)'
